@@ -4,6 +4,7 @@
     <child1/>
     <child2/>
     <child3/>
+    <CssModule1/>
   </div>
 </template>
 
@@ -11,10 +12,11 @@
   import Child1 from "./components/Child1"
   import Child2 from "./components/Child2"
   import Child3 from "./components/Child3"
+  import CssModule1 from "./components/CssModule1";
 
 export default {
   name: 'app',
-  components: {Child1, Child2, Child3},
+  components: {Child1, Child2, Child3,CssModule1},
   data () {
     return {
       msg: Child1.data()
