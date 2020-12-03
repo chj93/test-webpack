@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>axios_contact</title>
+  </head>
+  <body>
+    <pre>
+axios
+  서버와 통신하기위한 방법으로 axios를 이용
+  config/index.js에서 CORS기법으로 프록시 생성(이미 CORS를 제공할 경우 만들지 않아도 됨)
+  Promise객체와 함께 사용
+  요청방법
+      -저수준 API : 모든 전달값을 config 객체로 전달
+        axios(config)
+        axios(url, config)
+      - 각 메소드별 명칭
+        axios.get(url[, config])
+        delete(url[, config])
+        post(url[, data[, config]])
+        put(url[, data[, config]])
+        head(url[, config])
+        option(url[, config])
+  응답방법
+      config : 요청시 사용된 옵션정보
+      headers
+      reques
+      status : HTTP 상태코드
+      statusText
+
+    </pre>
+    <div id="app"></div>
+
+  </body>
+</html>

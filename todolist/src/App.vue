@@ -1,4 +1,4 @@
-<!-- 컴포넌트 : todolist/src/App.vue-->
+<!-- 컴포넌트 : todolist/src/ContactApp.vue-->
 <!--컴포넌트 랜더링: todolist/src/main.js-->
 <!--보여지는곳: todolist/index.html-->
 
