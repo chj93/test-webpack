@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>p312</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <pre>
+Vuex
+  상태관리패턴을 지원하는 라이브러리
+  컴포넌트끼리 공유하는 상태데이터를 관리하므로, 속성 또는 이벤트 전달에 제약이 없음
+  하나의 컴포넌트 내부에서만 사용되는 상태를 vuex store에서 관리할 필요 없음
+  (여러 컴포넌트가 동일한 상태 데이터를 이용하는 경우 유용)
+
+  UI = Store의 state(App data), 행위 = Action, state를 변경하는 함수 = mutation
+    'Store'를 중심으로 작동 - App 내부의 모든 컴포넌트들이 공유하는 중앙집중화된 상태정보 저장소 역할, 상태변경을 투명하게 함
+    'mutation'을 통해 Store에서 상태를 직접 변경하지 않고, mutation으로 변경 - 기존 값을 유지하고 새로운 값 생성함으로 상태의 변화 추적 가능
+    'action'을 통해 비지니스 로직 실행, 그 결과를 'mutation'으로 commitcd
+
+  mapState, mapMutations 이용: 컴포넌트 바인딩 헬퍼 메소드
+    </pre>
+
+    <script src="/dist/build.js"></script>
+  </body>
+</html>
