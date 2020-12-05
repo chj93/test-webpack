@@ -65,8 +65,9 @@ ul li.checked::before {
 
     //mapState, mapMutations 이용
     computed:mapState(['todolist']),
+    //cheched속성의 경우 변이를 일으키지 않기 때문에 병
     methods:_.extend({
-        checked(done) {
+        checked(done) {합
           if (done) return {checked: true};
           else return {checked: false};
         }

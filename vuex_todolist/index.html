@@ -15,8 +15,8 @@ Vuex
 
   UI = Store의 state(App data), 행위 = Action, state를 변경하는 함수 = mutation
     'Store'를 중심으로 작동 - App 내부의 모든 컴포넌트들이 공유하는 중앙집중화된 상태정보 저장소 역할, 상태변경을 투명하게 함
-    'mutation'을 통해 Store에서 상태를 직접 변경하지 않고, mutation으로 변경 - 기존 값을 유지하고 새로운 값 생성함으로 상태의 변화 추적 가능
-    'action'을 통해 비지니스 로직 실행, 그 결과를 'mutation'으로 commitcd
+    'mutation'을 통해 Store에서 상태를 직접 변경하지 않고, mutation으로 변경 (동적처리)- 기존 값을 유지하고 새로운 값 생성함으로 상태의 변화 추적 가능
+    'action'을 통해 비지니스 로직 실행, 그 결과를 'mutation'으로 commit (비동적처리)
 
   mapState, mapMutations 이용: 컴포넌트 바인딩 헬퍼 메소드
     </pre>
