@@ -1,4 +1,4 @@
-<!--AppScoped의 자식 component-->
+<!--AppScoped의 자식 components-->
 <template>
   <div class="child">
     X : <input type="text" v-model="x" /><br />

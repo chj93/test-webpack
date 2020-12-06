@@ -3,34 +3,26 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>axios_contact</title>
+    <title>Vuex_contact</title>
   </head>
   <body>
     <pre>
-axios
-  서버와 통신하기위한 방법으로 axios를 이용
-  config/index.js에서 CORS기법으로 프록시 생성(이미 CORS를 제공할 경우 만들지 않아도 됨)
-  Promise객체와 함께 사용
-  요청방법
-      -저수준 API : 모든 전달값을 config 객체로 전달
-        axios(config)
-        axios(url, config)
-      - 각 메소드별 명칭
-        axios.get(url[, config])
-        delete(url[, config])
-        post(url[, data[, config]])
-        put(url[, data[, config]])
-        head(url[, config])
-        option(url[, config])
-  응답방법
-      config : 요청시 사용된 옵션정보
-      headers
-      reques
-      status : HTTP 상태코드
-      statusText
+Vuex
+  상태관리패턴을 지원하는 라이브러리
+  컴포넌트끼리 공유하는 상태데이터를 관리하므로, 속성 또는 이벤트 전달에 제약이 없음
+  하나의 컴포넌트 내부에서만 사용되는 상태를 vuex store에서 관리할 필요 없음
+  (여러 컴포넌트가 동일한 상태 데이터를 이용하는 경우 유용)
+
+  UI = Store의 state(App data), 행위 = Action, state를 변경하는 함수 = mutation
+    'Store'를 중심으로 작동 - App 내부의 모든 컴포넌트들이 공유하는 중앙집중화된 상태정보 저장소 역할, 상태변경을 투명하게 함
+    'mutation'을 통해 Store에서 상태를 직접 변경하지 않고, mutation으로 변경 - 기존 값을 유지하고 새로운 값 생성함으로 상태의 변화 추적 가능
+        commit() 이용, 동기 처리
+    'action'을 통해 비지니스 로직 실행, 그 결과를 'mutation'으로 commit
+       dispatch() 이용, 비동기 처리
 
     </pre>
     <div id="app"></div>
 
   </body>
 </html>
+
