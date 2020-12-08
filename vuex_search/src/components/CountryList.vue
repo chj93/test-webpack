@@ -37,7 +37,6 @@ export default {
     #list td:nth-child(4n+2), #list th:nth-child(4n+2) { width:150px; }
     #list td:nth-child(4n+3), #list th:nth-child(4n+3) { width:150px; }
     #list td:nth-child(4n), #list th:nth-child(4n+1) { width:120px; }
-
     #list > thead > tr { color:yellow; background-color: purple; }
 </style>
 
